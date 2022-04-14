@@ -1,6 +1,7 @@
 import React, { Suspense, VFC } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { CameraAnimation } from './CameraAnimation';
+import { Loading } from './Loading';
 import { MainCard } from './MainCard';
 import { Effects } from './postprocessing/Effects';
 import { RippleDistortionPass } from './postprocessing/RippleDistortionPass';
@@ -21,7 +22,7 @@ export const TCanvas: VFC = () => {
 			dpr={window.devicePixelRatio}
 			shadows>
 			<color attach="background" args={['#000']} />
-			<Suspense fallback={null}>
+			<Suspense fallback={<Loading />}>
 				<SubCards />
 				<MainCard />
 				<Effects sRGBCorrection>

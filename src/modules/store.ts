@@ -1,3 +1,4 @@
+import { proxy } from 'valtio';
 import { AppState } from '../types/types';
 import { works } from './data';
 
@@ -27,3 +28,5 @@ export const appState: AppState = {
 	hoveredLink: false,
 	pageTransitionProgress: 0
 }
+
+export const loadingState = proxy<{ completed: boolean }>({ completed: false })
