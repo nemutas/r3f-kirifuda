@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, VFC } from 'react';
+import React, { useEffect, useRef, VFC } from 'react';
 import * as THREE from 'three';
 import { css } from '@emotion/css';
 import { works } from '../modules/data';

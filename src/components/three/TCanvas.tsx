@@ -1,5 +1,4 @@
 import React, { Suspense, VFC } from 'react';
-import { Stats } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import { CameraAnimation } from './CameraAnimation';
 import { MainCard } from './MainCard';
