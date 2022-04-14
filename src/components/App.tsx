@@ -3,7 +3,7 @@ import { css } from '@emotion/css';
 import { appState } from '../modules/store';
 import { LinkIconButton } from './LinkIconButton';
 import { MouseTracker } from './MouseTracker';
-import { ScrollAnotation } from './three/ScrollAnotation';
+import { ScrollAnotation } from './ScrollAnotation';
 import { TCanvas } from './three/TCanvas';
 
 export const App: VFC = () => {
