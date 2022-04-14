@@ -12,7 +12,7 @@ export const ProgressManager: VFC = () => {
 		})
 		appState.progress = 1
 		appState.progress2 = 1
-		tl.to(appState, { progress: 0, duration: 1, ease: 'power1.inOut' })
+		tl.to(appState, { progress: 0, duration: 1.2, ease: 'power1.inOut' })
 		tl.to(appState, { progress2: 0, duration: 0.3, ease: 'none' })
 	}
 
