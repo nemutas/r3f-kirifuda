@@ -49,13 +49,19 @@ export const MouseTracker: VFC = () => {
 }
 
 const ThumbImage: VFC = () => {
+	const ref = useRef<HTMLImageElement>(null)
 	const animeID = useRef<number>()
-	const [fileName, setFileName] = useState(works[appState.workIndex].image)
+
+	const images = works.map(work => {
+		const image = new Image()
+		image.src = `${process.env.PUBLIC_URL}/assets/images/${work.image}`
+		return image
+	})
 
 	useEffect(() => {
 		const anime = () => {
 			if (appState.enabledScroll) {
-				setFileName(works[appState.workIndex].image)
+				ref.current!.src = images[appState.workIndex].src
 			}
 			animeID.current = requestAnimationFrame(anime)
 		}
@@ -64,9 +70,9 @@ const ThumbImage: VFC = () => {
 		return () => {
 			animeID.current && cancelAnimationFrame(animeID.current)
 		}
-	}, [])
+	}, [images])
 
-	return <img className={styles.image} src={`${process.env.PUBLIC_URL}/assets/images/${fileName}`} alt="" />
+	return <img ref={ref} className={styles.image} alt="" />
 }
 
 const styles = {
