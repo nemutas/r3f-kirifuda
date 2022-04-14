@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/r3f-kirifuda/static/css/main.bd4aea60.css",
-    "main.js": "/r3f-kirifuda/static/js/main.3859d5fc.js",
+    "main.js": "/r3f-kirifuda/static/js/main.3509316f.js",
     "static/js/27.e57bf0c4.chunk.js": "/r3f-kirifuda/static/js/27.e57bf0c4.chunk.js",
     "index.html": "/r3f-kirifuda/index.html"
   },
   "entrypoints": [
     "static/css/main.bd4aea60.css",
-    "static/js/main.3859d5fc.js"
+    "static/js/main.3509316f.js"
   ]
 }
