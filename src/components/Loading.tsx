@@ -42,7 +42,7 @@ const styles = {
 		left: 0px;
 		width: 100vw;
 		height: 100vh;
-		background-color: rgba(0, 0, 0, 0.7);
+		background-color: #000;
 		display: flex;
 		justify-content: center;
 		align-items: center;
